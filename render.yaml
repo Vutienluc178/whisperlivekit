@@ -10,5 +10,4 @@ services:
         value: base
       - key: LANGUAGE
         value: vi
-      - key: PORT
-        value: 8000
+      # PORT do Render set động; start.sh sẽ đọc từ env này
