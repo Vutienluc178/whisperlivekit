@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: whisperlivekit
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile.cpu
+    healthCheckPath: /web/
+    envVars:
+      - key: MODEL
+        value: base
+      - key: LANGUAGE
+        value: vi
+      - key: PORT
+        value: 8000
